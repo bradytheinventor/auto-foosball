@@ -2,6 +2,11 @@
 #include <wiringPi.h>
 #include "Motor.h"
 
+//blank motor constructor
+Motor::Motor() {
+    
+}
+
 //load motor GPIO pins on object creation
 Motor::Motor(int A1, int A2, int B1, int B2) {
 	//set up wiringPi GPIO interface
@@ -23,6 +28,8 @@ Motor::Motor(int A1, int A2, int B1, int B2) {
     stepCount = 8;
     stepCounter = 0;
 
+    //set degrees per step of motor
+    degreePerStep = 5.625;
 }
 
 //update motor GPIO pins to execute motor step
