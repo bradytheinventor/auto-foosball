@@ -10,7 +10,7 @@ int main() {
     Player p = Player(0, 200, 0, 1, 2, 3);
     
     // Move player to 500mm location
-    p.moveTo(500);
+    p.moveTo(-1);
     
     //main program loop
 	while(1) {
