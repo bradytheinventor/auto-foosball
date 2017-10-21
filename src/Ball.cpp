@@ -45,3 +45,7 @@ void Ball::setXVel(double velX) {
 void Ball::setYVel(double velY) {
     velocity.at(1) = velY; // Sets the y velocity of the ball to the inptu velocity
 }
+
+void Ball::setRadius(double rad) {
+    radius = rad; // Sets the ball's velocity
+}

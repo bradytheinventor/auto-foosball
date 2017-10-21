@@ -39,7 +39,6 @@ using namespace std;
             cout << "Player cannot move to " << mili << " because the range of this player is " << posRange[0] << " - " << posRange[1] << endl;
             return;
         }
-        double pulleyCircumference = 10.68; // Circumference of the pulleys. Measured in milimeters.
         double pulleyRadius =  1.7; // Radius of the pulleys. Measured in milimeters.
         
         double rad = mili / pulleyRadius; // Conversion from milimeters to radians

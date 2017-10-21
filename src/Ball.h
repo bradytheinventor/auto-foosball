@@ -29,6 +29,7 @@ public:
     void setYPos(double posY); // Set the y position of the bal; - should only be used by the camera
     void setXVel(double velX); // Set the x velocity of the ball - should only be used by the camera
     void setYVel(double velY); // Set the y velocity of the ball - should only be used by the camera
+    void setRadius(double rad); // Set the radius fo the ball - should only be used by the camera
     
 };
 #endif /* Ball_h */
