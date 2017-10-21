@@ -18,6 +18,11 @@ Motor::Motor(int A1, int A2, int B1, int B2) {
 	pinMode(pins[1], OUTPUT);
 	pinMode(pins[2], OUTPUT);
 	pinMode(pins[3], OUTPUT);
+    
+    //set step count and step counter
+    stepCount = 8;
+    stepCounter = 0;
+
 }
 
 //update motor GPIO pins to execute motor step

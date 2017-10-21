@@ -5,19 +5,19 @@
 class Motor {
 private:
 	//store the GPIO pin states needed to execute a particular movement
-	int stepCount = 8;
-	int stepCounter = 0;
+	int stepCount;
+	int stepCounter;
 
-	int seq[8][4] = {
-			{1,0,0,1},
-			{1,0,0,0},
-			{1,1,0,0},
-			{0,1,0,0},
-			{0,1,1,0},
-			{0,0,1,0},
-			{0,0,1,1},
-			{0,0,0,1}
-	};
+    int seq[8][4] = {
+        {1,0,0,1},
+        {1,0,0,0},
+        {1,1,0,0},
+        {0,1,0,0},
+        {0,1,1,0},
+        {0,0,1,0},
+        {0,0,1,1},
+        {0,0,0,1}
+    };
 	int pins[4];
 
 public:
