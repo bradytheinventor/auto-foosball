@@ -1,3 +1,6 @@
 *.cproject
 .project
 *.xml
+/Debug/
+
+*.prefs
